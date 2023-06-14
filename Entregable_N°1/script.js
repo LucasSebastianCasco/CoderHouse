@@ -50,7 +50,8 @@ function mostrarCarrito() {
     console.log("Bienvenido, " + usuario + "!");
   
     let iniciar = prompt("¿Desea iniciar una compra? responda 'si'o 'no' por favor");
-    if (iniciar.toLowerCase()==='si') {
+    iniciar = iniciar.trim()
+    if (iniciar.toLowerCase() === 'si') {
       agregarProducto();
       
     } else{
